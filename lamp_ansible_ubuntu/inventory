@@ -1,0 +1,3 @@
+[localhost]
+ubuntu ansible_host=192.168.122.250 ansible_connection=ssh ansible_user=xetex
+

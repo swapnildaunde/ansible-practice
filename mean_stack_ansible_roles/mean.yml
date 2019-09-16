@@ -1,0 +1,12 @@
+---
+- hosts: nodes
+  remote_user: ansible
+  become: yes
+  become_method: sudo
+  vars:
+    #variable needed during node installation
+    var_node: /tmp
+  roles:
+      - prerequisites
+      - mongodb
+      - nodejs
